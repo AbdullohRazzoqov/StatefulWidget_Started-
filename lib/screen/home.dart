@@ -11,45 +11,54 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Card(
-            child: TextButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>const  MyInitStateExample()));
-              },
-              child: const Text(
-                "initState and Dispose",
-                style: TextStyle(fontSize: 25),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "initState");
+                  },
+                  child: const Text(
+                    "initState and Dispose",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
               ),
             ),
           ),
-           Card(
-            child: TextButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>const   MyStepper()));
-              },
-              child: const Text(
-                "Steppers example",
-                style: TextStyle(fontSize: 25),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "stepper");
+                  },
+                  child: const Text(
+                    "Steppers example",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
               ),
             ),
           ),
-            Card(
-            child: TextButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const  MyTextField()));
-              },
-              child: const Text(
-                "TextField example",
-                style: TextStyle(fontSize: 25),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "textField");
+                  },
+                  child: const Text(
+                    "TextField example",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
               ),
             ),
           ),
