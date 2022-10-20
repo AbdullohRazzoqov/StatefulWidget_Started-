@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.fallback(
         
       ),
-      home:  MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
