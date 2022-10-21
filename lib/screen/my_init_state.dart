@@ -3,7 +3,7 @@ import 'package:my_statefulwidget/screen/home.dart';
 //? 4 ta build medhod bor 1. initState, 2. dispose, 3. build, 4. setState
 //! build => sahifa har safar ishga tushganda ishlaydi 
 //! initState => bizda sahifa ishlaganda bir marta ishga tushushi kerak bo'lgan nimdir bo'lsa ichida yozsak bo'ladi
-//! dispose => sahifadan chiqib ketyotganda bir ishlaydi
+//! dispose => sahifadan chiqib ketyotganda bir marta ishlaydi
 //! setState => biror amal bajarilgandan so'ng sahifani qayta chizadi
 class MyInitStateExample extends StatefulWidget {
   const MyInitStateExample({super.key});
