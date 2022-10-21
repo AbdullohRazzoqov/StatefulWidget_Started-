@@ -33,7 +33,7 @@ class _MyTextFieldState extends State<MyTextField> {
               child: Column(
                 children: [
                   TextFormField(
-                    //?controller => yozgan qiymatlarni saqlaydi
+                    //?controller => TextFieldga yozilgan qiymatlarni saqlaydi
                     controller: _nameController,
                     //?keyboardType => klavturani qanday bo'lishi controll qilamiz
                     keyboardType: TextInputType.number,
